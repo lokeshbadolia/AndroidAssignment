@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.budget.view.inputbudget.BudgetInputActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <Spinner
+            android:id="@+id/expense_type_spinner"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:hint="@string/amount_here"
+            android:layout_height="@dimen/_40sdp"/>
+
+        <EditText
+            android:id="@+id/amount_blank"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="@string/amount_here"
+            android:layout_height="@dimen/_40sdp"
+            android:autofillHints="Amount here" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/view_all_btn"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/view_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
